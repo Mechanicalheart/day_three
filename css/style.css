@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+}
+
+.board{
+	width: 600px;
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 50px auto;
+}
+
+.square{
+	color: white;
+	font-size: 64px;
+	font-family: 'Rubik', sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid white;
+	width: 200px;
+	height: 200px;
+	background: #16a085; 
+	cursor: pointer;
+	transition: all ease 0.7s;
+}
+
+.square:hover{
+	background: #c0392b;
+}
+
+.modal{
+	position: absolute;
+	left: 30%;
+	top: 100px;
+	visibility: hidden;
+	color: white;
+	width: 400px;
+	height: 250px;
+	background: #2980b9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
